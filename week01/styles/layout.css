@@ -25,7 +25,7 @@ nav{
 .navigation a {
     display:block;
     color:#eee;
-    padding:o.75rem;
+    padding:.75rem;
     text-decoration:none;
     text-align: center;
 }
@@ -37,8 +37,8 @@ nav{
 body{
     background-color:rgba(178, 178, 196, .3);
     display: grid;
-    grid-template-columns:1fr, 1fr, 1fr ;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
     
 }
 header{
