@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: rgba(0,0,0,.1);
+  box-sizing:border-box;
+}
+:root{
+   --heading-font:'merriweather','noto','open sans', 'sans';
+   --paragraph-font:'montserrat','lato','sans serif';
+
+   --primary-color: #740101;
+   --secondary-color:#00ff4c;
+   --accent1-color: #061634;
+   --accent2-color: #a4ca50;
+   --accent3-color: rgba(17,255,212, .8);
+   
+   
+}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top:.6rem;
+    /*background-color: aquamarine;*/
+    margin-bottom:.6rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+h1,h2{
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    color:var(--accent2-color);
+    margin: 0 auto;
+    padding: .75rem;
+    text-align: center;
+    max-width: 1000px;
+    box-sizing:border-box;
+}
+p{
+    margin-left: .75rem;
+}
+.navigation{
+    background-color: var(--accent3-color);
+    /*background-color: rgba(17,255,212, .8);*/
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    box-sizing:border-box;
+    margin:0 auto;
+}
+
+.navigation a{
+display: block;
+/*color:white;*/
+color:black;
+padding:.75rem;
+text-align: center;
+margin:0 auto; /*flex: 1 1 auto;*/
+text-decoration: none;
+}
+
+.navigation a:hover{
+    font-weight: 700;
+    margin-top: .21rem;
+    background-color: var(--accent1-color);
+    color:white;
+  
+    }
+
+    .card{
+        border:2px solid rgb(141, 93, 93);
+        margin:.5rem;
+        border-radius: 7px;
+    }
+.card h2{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+.card a{
+align-items: center;
+text-decoration: none;
+}
+.card a:hover{
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 700;
+    
+    
+    }
+figure{
+    float:right;
+}
+.card img  {
+    max-width: 150px;
+
+  /*  border: 1px solid green;*/
+   }
+.religionimg{
+    max-height:150px;
+    float:right;
+   
+}
+
+.templeimg{
+    float:right;
+}
+
+.dev{
+    margin-top:1rem;
+    padding-top: 2rem;
+    border: 3px solid green;
+}
+.dev h3{
+    text-align: center;
+    border-bottom:2px solid black;
+    max-width: 500px;
+    margin:0 auto;
+    margin-bottom: .5rem;
+   
+}
+figure{
+    display: inline-block;
+    flex-flow:column;
+    margin:auto;
+    width:100%;
+    padding:5px;
+    
+}
+
+figcaption{
+    font:italic small sans-serif;
+    padding:5px;
+}
+
+footer{
+    background-color: var(--accent3-color);
+    /*background-color: rgba(17,255,212, .8);*/
+    max-width: 1000px;
+    margin:0 auto;
+    color:black;
+    text-align: center;
+    padding:.2rem;
+    box-sizing:border-box;
+}
