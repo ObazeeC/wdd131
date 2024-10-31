@@ -3,11 +3,12 @@
 
 body{
     background-color: rgba(0,0,0,.1);
-  box-sizing:border-box;
+    box-sizing:border-box;
+    font-family: "Merriweather", serif;
 }
 
 :root{
-    --heading-font:'roboto', 'sans-serif';
+    
     --paragraph-font:'arimo', 'sans-serif';
  
    --primary-color: #740101;
@@ -28,7 +29,7 @@ main{
     grid-template-columns: 2fr 1fr;
 }
 h1,h2{
-    font-family:var(--heading-font);
+    font-family: "Roboto", serif;
     background-color: var(--accent1-color);
     color:var(--accent2-color);
     margin: 0 auto;
