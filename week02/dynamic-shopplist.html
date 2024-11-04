@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+const list = document.querySelector("ul");
+const input = document.querySelector("input");
+const buttin = document.querySelector("button");
+
+// create a function that will run when the button is press
+buttin.addEventListener('click', () =>{
+
+    //start off by storing the current value of the input element
+    const myItem = input.value;
+
+    // empty the input element by setting its value to an empty string
+    input.value = "";
+
+    // create three new elements; alist (<li>), (<span>), a (<button>)
+    const listItem = document.createElement('li');
+    const spanElement = document.createElement('span');
+    const listBtn = document.createElement('button');
+
+    //append the span, button as children of the list item
+    listItem.appendChild(spanElement);
+    listItem.appendChild(listBtn);
+
+    // set the text content of the span to the input element
+    // set the text content of the listBtn to delete
+    spanElement.textContent = myItem;
+    listBtn.textContent = 'Delete';
+
+    // append the list item as a child of the list
+    list.appendChild(listItem);
+
+    // Attach an event handler to delete button, 
+    // so that when clicked, it will delete the entire list item (<li>...<li>)
+    listBtn.addEventListener('click', () => {
+    list.removeChild(listItem);
+    });
+
+    // Use the focus() method to focus the input element ready for entering 
+    input.focus();
+}
+    
+);
+    </script>
+  </body>
+</html>
