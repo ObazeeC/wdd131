@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Random color example - event handler attribute</title>
+    <style>
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Change color</button>
+
+    <!-- 2. THIS PROGRAM WILL TELL YOU WHICH BUTTON YOU PRESSED ON YOUR KEYBOARD-->
+     <input id="textbox" type="text"/>
+     <div id="output"></div>
+
+     <!-- 3. form validation -->
+      <form>
+        <div>
+            <lable for ="fname">First name:</lable>
+            <input id="fname" type="text" />
+        </div>
+        <div>
+            <lable for ="lname">Last name:</lable>
+            <input id="lname" type="text" />
+        </div>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+      </form>
+       <p></p>
+
+    <script>
+      const btn = document.querySelector('button');
+
+      function myfunction(number) {
+        return Math.floor(Math.random() * (number+1));
+      }
+    /* Method 1, without event object
+      btn.addEventListener('click', () => {
+        const rndCol = `rgb(${myfunction(255)}, ${myfunction(255)}, ${myfunction(255)})`;
+        document.body.style.backgroundColor = rndCol;
+        
+        // Remove event listener
+      //  btn.removeEventListener('click', backgroundColor); This is not working
+      
+      }); */
+
+      // Method 2, with event object
+      function backgroundChange(e){ // you can choose any you like for the event object (e)
+        const rndCol = `rgb(${myfunction(255)}, ${myfunction(255)}, ${myfunction(255)})`;
+        const rndColButton = `rgb(${myfunction(125)}, ${myfunction(78)}, ${myfunction(78)})`;
+        document.body.style.backgroundColor = rndCol; // this changes the color of the entire document
+       e.target.style.backgroundColor = rndColButton; // this changes the button itself
+        console.log(e)
+      }
+       btn.addEventListener('click', backgroundChange);
+       //btn.removeEventListener('click', backgroundChange); // here this line of code works
+
+       // program two; tell you which key was pressed on the keyboard, 
+       // using event object features
+       const textBox = document.querySelector("#textbox"); // Note the # key in the query selector
+       const output = document.querySelector("#output");
+       textBox.addEventListener("keydown", (e) =>{
+       output.textContent = ` You pressed "${e.key}".`;
+
+       });
+
+        // the form
+       const form = document.querySelector('form');
+       const fname = document.querySelector('fname');
+       const lname = document.querySelector('lname');
+       const para = document.querySelector('p');
+
+
+       form.addEventListener ("submit", (e) => {
+        if (fname.value === "" || lname.value === "") {
+            e.preventDefault();
+            para.textContent = "You need to fill in both names!";
+        }
+       });
+    </script>
+  </body>
+</html>
