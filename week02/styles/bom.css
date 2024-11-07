@@ -1,6 +1,4 @@
-body{
-    background-color: aquamarine;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,7 +29,9 @@ input, button{
 button {
     margin:.5rem;
     font-weight: bolder;
+    
 }
+
 
 .delete {
     width: fit-content;
@@ -44,6 +44,7 @@ button {
 
 .list{
     padding:.5rem;
+ 
 }
 
 ul{
