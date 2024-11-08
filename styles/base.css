@@ -79,6 +79,8 @@ text-decoration: none;
     
 .card img  {
         max-width: 150px; 
+        float:right;
+        padding: .5rem;
        }
 
     
@@ -96,7 +98,7 @@ text-decoration: none;
   
     figcaption{
         font:italic small sans-serif;
-        padding:5px;
+        text-align: center;
     }
    
     .section1{
@@ -107,11 +109,9 @@ text-decoration: none;
     
     figure{
         float:left;
+        margin-left: .2rem;
     }
-    .religionimg{
-        float:right;
-     
-    }
+  
     .clearfix::after {
         content: "";
         clear: both;
