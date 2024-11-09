@@ -1,0 +1,7 @@
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+
+
+let modify = document.lastModified;
+document.getElementById("lastModified").innerHTML = modify;

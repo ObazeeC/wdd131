@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500&display=swap');
 
 body{
-    background-color: rgba(0,0,0,.1);
+   background-color: rgba(0,0,0,.1);
     box-sizing:border-box;
-    font-family: "Arimo", sans-serif;
+    font-family: 'Arimo', 'Roboto', 'sans-serif';
 }
 
 :root{
     
-    --paragraph-font:"Arimo", sans-serif;
+    --paragraph-font:'Arimo', 'Roboto','sans-serif';
  
    --primary-color: #740101;
    --secondary-color:#00ff4c;
@@ -27,7 +28,8 @@ main{
     grid-template-columns: 2fr 1fr;
 }
 h1{
-    font-family: "Roboto", serif;
+    /*font-family: 'Roboto', serif;*/
+    font-family:'Roboto', 'Arimo', 'sans-serif';
     background-color: var(--accent1-color);
     color:var(--accent2-color);
     margin: 0 auto;
