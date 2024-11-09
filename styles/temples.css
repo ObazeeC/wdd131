@@ -5,6 +5,7 @@ body {
 }
 h1,h2{
     font-family :'Roboto', 'Arimo', 'sans-serif';
+    
 }
 main {
     max-width: 1000px;
@@ -25,6 +26,14 @@ figure img {
 }
 header{
     background-color: rgba(50, 50, 200, .4);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    border: 1px solid black;
+}
+.active {
+    color: greenyellow;
 }
 #menu {
 display:  block;
@@ -46,6 +55,9 @@ color:#000;
 }
 .navigation a {
     display:block;
+    /*
+    display: flex;
+    */
     text-decoration: none;
     padding:.5rem;
     text-align:left;
@@ -69,6 +81,9 @@ color:#000;
 }
 #menu.show::before{
     content:"X";
+    color:red;
+    font-weight: bold;
+
 }
 
 footer{
