@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;700&display=swap');
-body {
-  font-family :'Arimo', 'Roboto', 'serif';
-}
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500&display=swap');
 
+body {
+  font-family :'Arimo', 'Roboto', 'sans-serif';
+}
+h1,h2{
+    font-family :'Roboto', 'Arimo', 'sans-serif';
+}
 main {
     max-width: 1000px;
     margin:0 auto;
@@ -22,12 +25,12 @@ figure img {
 }
 header{
     background-color: rgba(50, 50, 200, .4);
-    display: flex;
 }
 #menu {
 display:  block;
 font-size: 2rem;
 font-weight : 700;
+padding:.5rem .75rem;
 text-decoration : none;
 color:#000;
 
@@ -55,14 +58,14 @@ color:#000;
     color:white;
     background-color: #000;
 }
-/*
+
 .navigation li {
     display : none;
 }
- */
+ 
  /* To be applied with js*/
 .show li {
-    display: block;
+    display: flex;
 }
 #menu.show::before{
     content:"X";
