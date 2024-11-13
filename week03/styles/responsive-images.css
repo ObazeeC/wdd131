@@ -1,0 +1,12 @@
+.hero img {
+    width:100%;
+    height:auto;
+}
+/* Or user object-fit with set image containers
+just be be mindful of the art direction with responsive result*/
+
+/*.hero img {
+width:100%;
+height: 100%;
+object-fit:cover;
+}

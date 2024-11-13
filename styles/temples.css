@@ -27,7 +27,7 @@ figure img {
 header{
     max-width: 1000px;
     margin: 0 auto;
-    
+
     background-color: rgba(50, 50, 200, .4);
     display:flex;
     align-items: center;
@@ -48,7 +48,8 @@ color:#000;
 
 }
 #menu::before{
-    content:"≡"
+    content:"≡";
+    
 }
 
 .navigation {
