@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --paragraph-font:'Arimo', 'Roboto','sans-serif';
+    --primary-color: green;
+    --secondary-color:white;
+    --accent1-color: rgb(60,200,60);
+    --accent2-color: rgb(100, 250, 60);
+}
+h1,h2{
+    text-align: center;
+}
+body{
+     box-sizing:border-box;
+     font-family: 'Arimo', 'Roboto', 'sans-serif';
+ }
+main, header, footer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hero-img img {
+    width:100%;
+    height:auto;
+}
+main{
+    background-color:var(--accent2-color);
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+header, footer{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    padding:1.5rem;
+    text-align: center; 
+}
+.weather img{
+    width:100px;
+    margin-left: 28rem;
+}

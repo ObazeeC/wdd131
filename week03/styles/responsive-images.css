@@ -2,6 +2,7 @@
     width:100%;
     height:auto;
 }
+
 /* Or user object-fit with set image containers
 just be be mindful of the art direction with responsive result*/
 
@@ -10,3 +11,18 @@ width:100%;
 height: 100%;
 object-fit:cover;
 }
+/*
+/* Another solution is to  use the aspect-ratio property*/
+
+
+/*in our case;
+.hero img{
+aspect-ratio:2/1;
+}
+/*
+other example;
+aspect-ration : auto;
+
+
+
+*/
