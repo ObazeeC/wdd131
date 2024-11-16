@@ -1,0 +1,42 @@
+@media screen and (min-width: 1300px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .hero-img{
+        position:relative;
+
+
+    }
+    h2{
+        background-color: green;
+        color:white;
+        display:block;
+    }
+    .data {
+        position: absolute;
+        top:8rem;
+        padding: .5rem;
+        background-color: rgba(30,47,43,0.8);
+        color: rgb(197,237,209);
+      
+        
+        
+    }
+    .weather {
+        position: absolute;
+        bottom:13rem;
+        padding: .5rem;
+        right: 23rem;
+      
+       background-color: rgba(30,47,43, 0.8);
+       color: rgb(197,237,209);
+       
+        
+ 
+    }
+   
+    p{
+        margin:.3rem;
+    }
+}

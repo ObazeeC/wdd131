@@ -5,9 +5,9 @@
     --primary-color: green;
     --secondary-color:white;
     --accent1-color: rgb(60,200,60);
-    --accent2-color: rgb(100, 250, 60);
+    --accent2-color: rgb(100, 250, 60, .3);
 }
-h1,h2{
+h1,h2, p{
     text-align: center;
 }
 body{
@@ -18,14 +18,15 @@ body{
 main, header, footer{
     max-width: 1000px;
     margin: 0 auto;
+    padding: .5rem;
 }
 .hero-img img {
     width:100%;
     height:auto;
 }
 main{
-    background-color:var(--accent2-color);
-    margin:0 auto;
+   background-color: var(--accent2-color);
+    margin:.5rem auto;
     display: grid;
     grid-template-columns: 1fr ;
     justify-items: center;
@@ -33,11 +34,14 @@ main{
 header, footer{
     background-color: var(--primary-color);
     color:var(--secondary-color);
-    padding:1.5rem;
     text-align: center; 
+    border-bottom: 12px solid rgb(185, 247, 18);
+
 }
 .weather img{
     max-width: 100px;
+}
+.pic{
     justify-self: center;
 }
 .show {
