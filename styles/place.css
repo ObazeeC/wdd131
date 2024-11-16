@@ -13,6 +13,7 @@ h1,h2{
 body{
      box-sizing:border-box;
      font-family: 'Arimo', 'Roboto', 'sans-serif';
+     
  }
 main, header, footer{
     max-width: 1000px;
@@ -26,7 +27,7 @@ main{
     background-color:var(--accent2-color);
     margin:0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     justify-items: center;
 }
 header, footer{
@@ -34,4 +35,11 @@ header, footer{
     color:var(--secondary-color);
     padding:1.5rem;
     text-align: center; 
+}
+.weather img{
+    max-width: 100px;
+    justify-self: center;
+}
+.show {
+    color: red;
 }

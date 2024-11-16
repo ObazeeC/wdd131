@@ -19,27 +19,48 @@
     </header>
     <main>
        
-        <div class="hero-img">
-            <picture>
+        
+            <picture class="hero-img">
                 <source media="(min-width:1000px)" srcset="images/hero-large.webp">
                 <source media="(min-width:550px)" srcset="images/hero-large.webp">
                 <img src="images/hero-small.webp" alt="Lagos brigde Nigeria" width="500" height="250">
             </picture>
-        </div>
 
-            <div class="data">
-               <h2>Data</h2>
-            </div>
 
-            <div class="weather">
+            <section class="data">
+                <h2>Data</h2>
+                <p><b>Area:</b> 923,769 sq km</p>
+                <p><b>Population:</b> 230,800,000</p>
+                <p><b>Capital:</b> Abuja</p>
+                <p><b>Official Language:</b> English</p>
+                <p><b>Currency:</b> Naira</p>
+                <p><b>Time Zone:</b> UTC + 01:00(WAT)</p>
+                <p><b>Country Code:</b> +234</p>
+                <p><b>ISO 3166 Code:</b> NG</p>
+                <p><b>Internet TLD:</b> ng</p>
+
+           
+             </section>
+
+             <section class="weather">
                 <h2>Weather</h2>
-                <img class="small" src="images/weather-small.svg" alt="weather symbol small view">
-
-
-                <!--Below to be show only in wide-->
+                <img src="images/weather-small.svg" alt="weather symbol small view">
+                  
+                 <p>Temperature: 3 °C</p>
+                 <p>Conditions : partly Cloudy</p>
+                 <p>Wind : 5 km/h </p>
+                 <p>Wind Chill <span id="weather"></span>°C  </p>
+                
+                <!--Below to be show only in wide
                 <img class="show-wide" src="" alt="wide view icon">
-            </div>
+                    <a id="menu" href="#"></a>
+                -->
+            </section>
         
+     
+            
+
+            
     </main>
 <footer> 
     <p> ©️<span id="currentyear"> </span> | Esosa C. Obazee | Nigeria</p>
