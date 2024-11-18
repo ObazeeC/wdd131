@@ -45,4 +45,18 @@ header, footer{
 .weather img{
     max-width: 100px;
 }
+.parentdiv {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: right;
+}
 
+.child2 p{
+    justify-self: start;
+    margin-left:.5rem;
+}
+
+.child p{
+    justify-self: end;
+    margin-right:.5rem;
+}
