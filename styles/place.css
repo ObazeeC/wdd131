@@ -10,6 +10,10 @@
 h1,h2, p{
     text-align: center;
 }
+picture img {
+    display:block;
+    justify-self: center;
+}
 body{
      box-sizing:border-box;
      font-family: 'Arimo', 'Roboto', 'sans-serif';
@@ -25,7 +29,7 @@ main, header, footer{
     height:auto;
 }
 main{
-   background-color: var(--accent2-color);
+    background-color: var(--accent2-color);
     margin:.5rem auto;
     display: grid;
     grid-template-columns: 1fr ;
@@ -40,8 +44,5 @@ header, footer{
 }
 .weather img{
     max-width: 100px;
-}
-.pic{
-    justify-self: center;
 }
 
