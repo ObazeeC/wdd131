@@ -3,18 +3,42 @@
         display:grid;
         grid-template-columns: 1fr;
     }
+    .page{
+        position:relative;
+    }
     .hero-img{
         position:relative;
+    }
+    
+    .data{
+        position:absolute;
+        top:0;
+        padding: .5rem;
+        background-color: rgba(30,47,43,0.8);
+        color: rgb(197,237,209);
+      
+    }
 
-
+    .weather{
+        position:absolute;
+        right:0;
+        bottom:0;
+     
+        background-color: rgba(30,47,43,0.8);
+        color: rgb(197,237,209);
+      
     }
     h2{
         background-color: green;
         color:white;
         display:block;
     }
+    p{
+        margin:.3rem;
+    }
+    /*
     .data {
-        position: absolute;
+       position: absolute;
         top:8rem;
         padding: .5rem;
         background-color: rgba(30,47,43,0.8);
@@ -36,5 +60,5 @@
    
     p{
         margin:.3rem;
-    }
+    }*/
 }
