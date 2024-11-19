@@ -25,9 +25,15 @@
         bottom:0;
         padding: .5rem;
         background-color: rgba(30,47,43,0.8);
-        color: rgb(197,237,209);
-      
+        color: rgb(197,237,209); 
     }
+
+    
+#emoticon::after{
+    content:"🌥️";
+    margin-left: 2rem;
+    }
+    
     h2{
         background-color: green;
         color:white;

@@ -62,7 +62,8 @@ header, footer{
     justify-self: end;
     margin-right:.5rem;
 }
-#emoticon::after{
-content:"🌥️";
-margin-left: 2rem;
+.data img{
+    max-width: 80px;
+    display: block;
+    margin:0 auto;
 }
