@@ -62,7 +62,7 @@ header, footer{
     justify-self: end;
     margin-right:.5rem;
 }
-.data img{
+.imageico{
     max-width: 80px;
     display: block;
     margin:0 auto;

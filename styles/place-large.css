@@ -33,7 +33,7 @@
     content:"🌥️";
     margin-left: 2rem;
     }
-    
+
     h2{
         background-color: green;
         color:white;
@@ -43,6 +43,9 @@
     p{
         margin:.3rem;
     }
+.imageico{
+    display: none;
 
+}
 }
     
