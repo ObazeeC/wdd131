@@ -34,6 +34,7 @@ main{
     display: grid;
     grid-template-columns: 1fr ;
     justify-items: center;
+
 }
 header, footer{
     background-color: var(--primary-color);
@@ -43,12 +44,13 @@ header, footer{
 
 }
 .weather img{
-    max-width: 100px;
+    max-width: 80px;
 }
 .parentdiv {
  display: grid;
  grid-template-columns: 1fr 1fr;
  justify-content: right;
+
 }
 
 .child2 p{
@@ -59,4 +61,8 @@ header, footer{
 .child p{
     justify-self: end;
     margin-right:.5rem;
+}
+#emoticon::after{
+content:"🌥️";
+margin-left: 2rem;
 }
