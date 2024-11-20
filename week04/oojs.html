@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    
+    <script>
+      
+       
+
+        /*
+         Object literal and object instantiated
+         Object literal like person object example, we have literally written out the object contents
+         Object instantiated from classes content are not literally written 
+        */
+
+        
+        // in our example origin.continent;
+       
+        // The above object property of origin can be access by linking chain of dot
+        // person.origin.Country 
+
+        /* We can also change our first object of person 'name'
+        to have another object as its property 
+    */
+            
+          const person = {
+         name: ["Bob", "Smith"],
+         age: 32,
+         bio: function () {
+         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+         },
+         introduceSelf: function () {
+         console.log(`Hi! I'm ${this.name[0]}.`);
+  },
+};
+         //When the object members are functions, there is  simple syntax.
+        //Instead of of bio: function () 
+        //we can use
+        // bio () 
+        
+        // Example 2
+        // OBJECTS AS OBJECT PROPERTY
+        // An object can itself be an object property
+        // lets add another object, that have an object 
+        // this will also cause us to change out method code
+        // from name [0] to name.first
+   
+        // lets modify one person object
+        const person1 = {
+        name: {
+        first: "Bob",
+        last: "Smith",
+        age:'31',
+        },
+  // to access these items you just need to chain the extra step onto the end
+  // with another dot. eg; person.name.first; person.name.last;
+  // if you do this, you'll will also need to go through your method code
+  // from name[0]; to name.first;
+       bio2(){
+        console.log(`${this.name.first} ${this.name.last} is ${this.name.age} years old.`);
+       },
+       introduceSelf2(){
+        console.log(`Hi! I'm ${this.name.first}.`);
+       },
+};
+
+// create another object variable name origin
+      const origin = {
+        born:{
+            country:"Nigeria",
+            state: "Edo-state",
+            place:"Benin -city",
+        },
+        school:{
+         primary:"Oghobaye primary school",
+         Secondary1:"Luigi Cathalic School",
+         secondary2:"Legend Group of School",
+        },
+        person:{
+            name:"Esosa Confidence Obazee",
+            age: "31",
+            sex:"Male",
+
+        },
+        info(){
+            console.log(`${this.person.name} is born in ${this.born.place} ${this.born.country}. He is ${this.person.age} years old`);
+        },
+
+      }
+       
+// EXAMPLE 3 BRACKET NOTATION
+// A different ways to access object properties
+/*
+instead of      ->      we have
+person.age;            person["age"];
+person.name.first      person["name"]["first"];
+*/
+
+/*
+Dot notation is generally preferred over bracket notation because it is more succinct and easier to read. 
+However there are some cases where you have to use square brackets. For example, 
+if an object property name is held in a variable, then you can't use dot notation
+ to access the value, but you can access the value using bracket notation.
+
+ In the example below, the logProperty() function can use
+ person[propertyName] to retrieve the value of the property named in propertyName.
+
+EXAMPLE 4
+ */
+
+ const person3 = {
+  name: ["Bob", "Smith"],
+  age: 32,
+};
+
+function logProperty(propertyName) {
+  console.log(person3[propertyName]);
+}
+
+logProperty("name");
+// ["Bob", "Smith"]
+logProperty("age");
+// 32
+ 
+     
+//SETTING OBJECT MEMBERS
+/*
+So far we've only looked at retrieving (or getting) object members — 
+you can also set (update) the value of object members by declaring the
+member you want to set (using dot or bracket notation), like this:
+*/
+
+person3.age = "45";
+person3["name"]["last"] = "Obazee";
+
+
+// Create new members
+person3.sex = "male";
+person3.height = "1.80cm";
+person3["weight"] = "80kg";
+person3.introduction = function(){
+    console.log(`I am practicing, ciao!`);
+};
+
+// Example 5 Using bracket notation
+/*
+One useful aspect of bracket notation is that it can be used to set not only
+member values dynamically, but member names too. Let's say we wanted
+users to be able to store custom value types in their people data, by typing the
+member name and value into two text inputs. We could get those values like this:
+*/
+const myDataName = "color";
+const myDataValue = "black";
+person3[myDataName] = myDataValue;
+   //Adding a property to an object using the method above isn't possible with dot notation,
+   // which can only accept a literal member name, not a variable value pointing to a name. 
+ // access the value in same way
+   //person3.color;  
+
+
+// Constructors
+// Create a constructor and use it to create many default object
+/*  
+We would like a way to define the "shape" of an object — the set of methods
+and the properties it can have — and then create as many objects as we like,
+just updating the values for the properties that are different.
+*/
+function createNewPerson(person){
+    const object = {};
+    object.name = person;
+    object.introduceSelf = function () {
+    console.log(`Hello, I am ${this.name}.`);
+    };
+return object;
+}
+// The first version of this is just a function - createNewperson
+// the function creates and returns a new object person each time we call it
+// the new object will have : a property 'name' and a methond 'introduceSelf'
+// Note that the createNewperson() takes a parameter (person) to set the value of the name property
+// but the value of the introduceSelf() method will be the same for all objects
+
+// lets create a new person called Eseiwi
+const person6 = createNewPerson("Eseiwi");
+person6.introduceSelf();
+
+const person7 = createNewPerson("Esther");
+person7.introduceSelf();
+
+// The code above work well but it is bit long, we will have to create an empty object, initialize it and return it
+// USING CONTRUCTORS
+// CONTRUCTORS CREATE A NEW OBJECT
+// BIND 'THIS' TO THE NEW OBJECT
+// RUN THE CODE IN THE CONSTRUCTOR
+//RETURN THE NEW OBJECT
+// WRITING THE SAME CODE ABOVE USING A CONSTRUCTOR
+
+// not that constructors, by convention, start with a capital letter
+function CreateNewPerson2(person){
+    this.name = person;
+    this.introduceSelf = function (){
+        console.log(`Hi! I'm ${this.name}.`);
+    };
+}
+// Call the CreateNewPerson2 as  a constructor 
+// use the 'new' keyword
+const person8 = new CreateNewPerson2("Azotabata");
+person8.introduceSelf();
+
+const person9 = new CreateNewPerson2("Penpower");
+person8.introduceSelf();
+
+// CONCLUSION
+/*
+For each webpage loaded, an instance of Document is created, called document, which represents the entire page's structure, content, and other features such as its URL. Again, this means that it has several common methods and properties available on it.
+
+The same is true of pretty much any other built-in object or API you've been using — Array, Math, and so on.
+
+const myDiv = document.createElement("div");
+const myVideo = document.querySelector("video");
+
+*/
+
+    </script>
+  </body>
+
+</html>
