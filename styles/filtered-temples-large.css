@@ -1,0 +1,115 @@
+
+@media screen and (min-width: 900px){
+    header{
+        display:grid;
+        grid-template-columns: 1fr 2.5fr;
+        gap:2rem;
+        max-width: 1000px;
+        margin:0 auto;
+        align-items: center;
+    }
+    ul, li { margin: 0; padding: 0; }
+   
+    .navigation{
+        display:flex;
+    }
+    .navigation li{
+       display:block;
+       justify-content: flex-end;
+       flex:1 1 100%; 
+    }
+    .navigation a {
+        text-align:center;
+    }
+    #menu{
+        display:none;
+    }
+     /*
+    figure {
+        max-width: 600px;
+        max-height: 700px;
+    }
+    figure img {
+        max-width: 350px; 
+        max-height: fit-content;
+    }
+   */
+   
+    .album-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+       /* grid-template-columns:repeat(auto-fit, minmax(200px, 1fr, 1fr)); */
+    }
+    
+    section {
+        max-width: 450px;
+        max-height: 700px;
+        margin:1rem;
+        background-color: rgba(221, 218, 218, 0.9);
+        box-shadow: 5px 5px 5px 5px   rgba(165, 52, 52, 0.1);
+      
+
+        
+    }
+    section img {
+        max-width: 350px; 
+        max-height: fit-content;
+      
+        
+    }
+    h3,p{
+        margin:0rem;
+        text-align: center;
+    }
+    footer{
+        padding:2rem;
+    }
+   
+}
+
+@media screen and (min-width :  1300px){
+    .navigation{
+        display:flex;
+    }
+    ul, li { margin: 0; padding: 0; }
+
+    .navigation li{
+       display:block;
+       flex:1 1 100%; 
+    }
+    .navigation a {
+        text-align:center;
+    }
+    #menu{
+        display:none;
+    }
+     
+    section {
+        width: 300px;
+        height: 300px;
+        margin: 1rem;
+        justify-items: center;
+        background-color: rgba(221, 218, 218, 0.9);
+        box-shadow: 5px 5px 5px 5px   rgba(165, 52, 52, 0.1);
+      
+      
+    }
+    section img {
+        max-width: 250px; 
+        max-height: 300px;
+        justify-self: center;
+    }
+    .album-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    h3,p{
+        margin:0rem;
+        text-align: center;
+    }
+    footer{
+        padding:2rem;
+    }
+}
