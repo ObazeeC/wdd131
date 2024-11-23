@@ -120,20 +120,8 @@ const temples = [
     createTempleCard(oldAry);
   });
 
-  largeLink.addEventListener("click", ()=>{
-    let largeT = temples.filter(y => y.area > 90000);
-    createTempleCard(largeT);
-  });
 
-  smallLink.addEventListener("click", ()=>{
-    let smallT = temples.filter(y => y.area < 10000);
-    createTempleCard(smallT);
-  })
 
-  homeLink.addEventListener("click", ()=>{
-  let hom = temples.map();
-  createTempleCard(hom);
-  });
 
 function createTempleCard(filteredTemples){
 document.querySelector(".album-grid").innerHTML="";

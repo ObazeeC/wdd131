@@ -99,6 +99,13 @@ section{
     box-shadow: 5px 5px 5px 5px   rgba(165, 52, 52, 0.1);
       
 }
+
+section img {
+    max-width: 450px; 
+    max-height: fit-content;
+  
+    
+}
 h3,p{
     margin:0rem;
     text-align: center;
