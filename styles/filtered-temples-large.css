@@ -55,12 +55,9 @@
     section img {
         width: 300px; 
         padding:1rem;
-        height: 200px;
-  
-   
-      
-        
+        height: 200px;        
     }
+    
     h3,p{
         margin:0rem;
         text-align: center;
@@ -99,8 +96,8 @@
       
     }
     section img {
-        max-width: 250px; 
-        max-height: 200px;
+        width: 250px; 
+        height: 200px;
         align-self: center;
     }
     .album-grid{
