@@ -105,9 +105,11 @@ section{
 section img {
      width: 300px; 
      height: 200px;
-     padding: 1rem;
-  
-    
+     padding: 1rem;  
+}
+
+.label {
+    font-weight: bold;
 }
 h3,p{
     margin:0rem;
