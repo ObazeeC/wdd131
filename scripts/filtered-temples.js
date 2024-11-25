@@ -21,7 +21,7 @@ tempbutton.classList.toggle('show');
 const temples = [
     {
       templeName: "Aba Nigeria",
-      location: "Aba, Nigeria",
+      location: "Aba Nigeria",
       dedicated: "2005, August, 7",
       area: 11500,
       imageUrl:
@@ -29,7 +29,7 @@ const temples = [
     },
     {
       templeName: "Manti Utah",
-      location: "Manti, Utah, United States",
+      location: "Manti, Utah, US",
       dedicated: "1888, May, 21",
       area: 74792,
       imageUrl:
@@ -53,7 +53,7 @@ const temples = [
     },
     {
       templeName: "Washington D.C.",
-      location: "Kensington, Maryland, United States",
+      location: "Kensington, Maryland, US",
       dedicated: "1974, November, 19",
       area: 156558,
       imageUrl:
@@ -78,9 +78,9 @@ const temples = [
     // Add more temple objects here...
     {
         templeName:"Abidjan Cote d'Ivoire",
-        location: "Lot 118 Riviera Attoban Cocody Abidjan",
-        dedicated: "25 May 2025",
-        area: "12033",
+        location: "Lot 118 Riviera Attoban  Abidjan",
+        dedicated: " 2025, May 25",
+        area: 12033,
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-1108-main.jpg"
        
     },
@@ -89,16 +89,16 @@ const temples = [
         templeName: "Bacolod Philippines",
         location:"Bacolod Airport Access Road",
         dedicated:"Not dedicated yet",
-        area:"26700",
+        area:26700,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bacolod-philippines-temple/bacolod-philippines-temple-24089-main.jpg"
 
     },
 
     {
         templeName:"Birmingham Alabama ",
-        location:"1927 Mount Olive Blvd Gardendale, Alabame 35071 United States",
-        dedicated:"2000",
-        area:"10700",
+        location:"1927 Mount Olive, Alabame 35071 US",
+        dedicated:"1999, October 9",
+        area: 10700,
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/birmingham-alabama-temple/birmingham-alabama-temple-21774.jpg"
 
     }
@@ -110,16 +110,39 @@ const temples = [
   createTempleCard(temples);
   const homeLink = document.querySelector('#home');
   const oldLink =  document.querySelector('#old');
-  const newLink = document.querySelector('new');
-  const largeLink = document.querySelector('large');
-  const smallLink = document.querySelector('small');
+  const newLink = document.querySelector('#new');
+  const largeLink = document.querySelector('#large');
+  const smallLink = document.querySelector('#small');
 
   oldLink.addEventListener("click", ()=>{
     let oldAry = temples.filter(y => y.location.includes("Utah"));
 
     createTempleCard(oldAry);
   });
+/*
+  largeLink.addEventListener("click", ()=>{
+    let lar = temples.filter(x => x.location.includes("Nigeria") );
+    createTempleCard(lar);
+  });
+*/
+  largeLink.addEventListener("click", ()=>{
+    let largeTemples = temples.filter(temple => temple.area > 90000)
+      createTempleCard(largeTemples);
+  });
 
+  smallLink.addEventListener("click", ()=>{
+    let smallTemples = temples.filter(temple => temple.area < 10000)
+      createTempleCard(smallTemples);
+  });
+
+  homeLink.addEventListener("click", ()=>{
+      createTempleCard(temples);
+  });
+
+  newLink.addEventListener("click", ()=>{
+    let newT = temples.filter(temp => temp.dedicated < 1900)
+    createTempleCard(newT);
+  });
 
 
 
