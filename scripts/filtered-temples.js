@@ -140,7 +140,7 @@ const temples = [
   });
 
   newLink.addEventListener("click", ()=>{
-    let newT = temples.filter (temp => temp.dedicated < 1900)
+    let newT = temples.filter (temp => temp.dedicated.parseInt() > 2000)
     createTempleCard(newT);
   });
 

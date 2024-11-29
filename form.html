@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Web Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundatamentals - Esosa C. Obazee - Product Review Web Form">
+    <meta name="author" content="Esosa C. Obazee">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="form1">
+ 
+ 
+         <label> Product Name* 
+            <select name="product" id="selectItem" required>
+                <option value="">Please select...</option>
+              <option value="Business">Business</option>
+              <option value="Sales">Sales</option>
+              <option value="Network">Networking</option>
+              <option value="Security">CyberSecurity</option>
+              <option value="BAU">BAU</option>
+            </select>
+         </label>
+         
+         <!--five stars-->
+         <div> Overall Rating </div>
+         <label><input type="radio" id="" name="" required>*</label>
+         <label><input type="radio" id="" name="" required>**</label>
+         <label><input type="radio" id="" name="" required>***</label>
+         <label><input type="radio" id="" name="" required>****</label>
+         <label><input type="radio" id="" name="" required>*****</label>
+
+         <!--Date of installation-->
+         <label>Date of Installation* <input type="date" id="" name="date" required></label>
+        
+
+       
+         <!--Useful features-->
+          <div>Which features did you find userful in the product <br> <i>(Check all that apply)</i></div>
+      
+          <label><input type ="checkbox"id="durability" name="durability" value="yes"> Durability</label>
+          <label><input type ="checkbox"id="use" name="use" value="yes"> Ease of Use</label>
+          <label><input type ="checkbox"id="performance" name="performance" value="yes"> Performance</label>
+          <label><input type ="checkbox"id="design" name="design" value="yes"> Design</label>
+      
+          <!--Written Review-->
+          <label>Written Review <span class="optional">(Optional)</span>
+           <textarea id="textarea" name="textarea" ></textarea></label>
+
+          <!--User Name-->
+          <label>Your Name<span class="optional">(Optional)</span> 
+            <input type="text" id="name" name="name"></label>
+  
+
+          <!--Submission-->
+          <input type="submit" value="Send Review">
+        </form>
+    </main>
+
+    <footer>
+        <p> ©️<span id="currentyear"> </span> | Esosa C. Obazee | Nigeria</p>
+        <p> Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
