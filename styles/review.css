@@ -8,14 +8,35 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
  */
  header,footer{
-    background-color: black;
-    color:white;
- }
- body{
-    font-size: 16px;
- }
- main {
-    margin-top:10rem;
-    margin-bottom:15rem;
- }
+   background-color: rgba(61, 21, 21, .9);
+   color:white;
+   text-align: center;
+   padding:.3rem;
 
+}
+
+body{
+   font-size: 16px;
+   max-width: 900px;
+   font-family:'Roboto', 'Arimo', 'sans-serif';
+   background-color: rgba(217, 200, 233,.1);
+   background-color: rgb(235, 221, 204);
+}
+
+main {
+   margin:2rem;
+}
+footer{
+   margin-top: 25rem;
+} 
+
+.num{
+
+   font-weight: bold;
+}
+
+.visit{
+
+   font-weight: bold;
+   color:blue;
+}
