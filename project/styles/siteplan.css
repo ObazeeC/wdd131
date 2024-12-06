@@ -1,0 +1,30 @@
+body{
+    background-color:#f3f3f3;
+    color:black;
+    max-width: 600px;
+    font-size: 16px;
+    font-family:'Arimo', 'sans-serif';;
+}
+
+header{
+    background-color: #5c415d;
+    color:#f3f3f3;
+    padding:1rem;
+    font-family: 'Roboto','sans-serif';
+}
+
+ h2, h3 {
+    background-color:#5c3040 ;
+    padding:.3rem;
+    color:#f9ebeb;
+}
+
+footer{
+    background-color:#978d97;
+    color:black;
+    padding: .5rem;
+}
+.logo {
+    width:200px;
+    height: auto;
+}
