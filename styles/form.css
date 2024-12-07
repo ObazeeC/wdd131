@@ -75,10 +75,18 @@ input[type=checkbox] {
 }
 
 */
-input[type=checkbox] {
+.chekbox input[type="checkbox"] {
+height:.6rem;
+
 
 }
 
+.chekbox label {
+  cursor:pointer;
+  padding:.7rem;
+  max-height: 1rem;
+  }
+ 
 
 /*
 .form1 input[type="radio"]{
@@ -199,3 +207,6 @@ padding:8px;
     color: orange;
   }
   */
+
+
+  /* Hide the default checkbox */
