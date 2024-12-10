@@ -1,0 +1,103 @@
+@media (min-width:40em){
+    /* @media screen and (min-width: 500px)*/
+    header {
+      
+        background-color: #5c415d;
+        color:#f3f3f3;
+        border:11px solid black;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 25px;
+        align-items: center;
+        max-width: 100%;
+        
+        
+    }
+    
+    .logo img {
+        display: block;
+     
+        width:80px;
+        height: auto;
+        padding-left: 2px;
+        
+    }
+    .nav  {
+        justify-self:flex-end;
+        justify-items: space-between;
+    }
+    /*
+    nav a {
+        text-align: right;
+         display: inline-block;
+
+         text-decoration: none;
+         padding:1rem;
+         margin:0;
+         font-weight:500;
+       /*  
+     }
+     .navigation{
+        display:flex;
+       justify-content: flex-end;
+    }
+    */
+  
+    
+    .navigation{
+        display:flex;
+        justify-content: flex-end;
+       
+    }
+    .navigation li{
+      display:block;
+       flex:1 1 100%; 
+       padding: 2px;
+    }
+    .navigation a {
+        text-align:center;
+       
+    }
+    #menu{
+        display:none;
+    }
+    .hero img {
+        width:100%;
+        height:auto;
+    }
+    .hero{
+        position: relative;
+    }
+    .hero-section1{
+        position:absolute;
+        top:1rem;
+        right:1rem;
+        max-width: 400px;
+        margin-left:2px;
+        background-color: #5c415d;
+        padding:1rem;
+    }
+
+    .hero-section2{
+        position:absolute;
+       /* bottom:-5rem; /* I use minus to move this section a bit bellow the hero*/
+        bottom:-5rem;
+        left:1rem;
+        max-width: 400px;
+        margin-left:2px;
+        background-color: #5c415d;
+        padding:1rem;
+    }
+
+    .section1 {
+        background-color: aqua;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top:5rem;
+    }
+
+    .section1 img{
+        /* margin-top:5rem;*/
+        
+     }
+}

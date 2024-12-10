@@ -52,21 +52,10 @@ const products = [
     selectElement.appendChild(option);
 
   });
-  /*
 
-  const visitCount = document.querySelector(".visit");
+// 1️⃣ Initialize display element variable
+const visitsDisplay = document.querySelector(".visits");
 
-  let numberOfVisits = Number(window.localStorage.getItem("numberOfVisits-ls")) || 0;
-  if (numberOfVisits !== 0){
-    visitCount.textContent = numberOfVisits;
-  }else{
-    visitCount.textContent =  `This is your firs visit.`
-  }
-
-  numberOfVisits++;
-  localStorage.setItem("numberOfVisits-ls", numberOfVisits);*/
-const visitsDisplay = document.querySelector("visit");
-//const todaydisplay = document.querySelector(".today");
 
 // 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
@@ -85,5 +74,5 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 
-// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
-//todaydisplay.textContent = Date.now();
+
+

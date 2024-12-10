@@ -1,0 +1,61 @@
+
+
+.logo img {
+    display: none;
+}
+    
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #5c415d;
+    color:#f3f3f3;
+}
+#menu::before{
+    content: "≡";
+}
+
+nav{
+    background-color: #5c415d;
+    color:#f3f3f3;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display:none;
+}
+    
+.navigation a {
+display:block;
+padding: .75rem;
+text-align: left;
+text-decoration: none;
+color:#f3f3f3;
+font-weight: 700;
+transition:.5s;
+font-size:clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+    color:black;
+    background-color: #ad94b4;
+}
+
+/* '.show' TO BE APPLIED BY SCRIPT 
+   So, we are adding and removing this class base on user interaction! */
+
+.show li {
+    display:block;
+}
+
+#menu.show::before{
+    content:"X";
+}
+
