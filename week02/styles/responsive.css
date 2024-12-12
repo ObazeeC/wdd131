@@ -3,7 +3,18 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+header{
+	background-color: orange;
+	
+}
+.dino{
+	padding:1rem;
+}
 
+#hhhh{
+	background-color: red;
+	margin:1rem;
+}
 h1 {
 	text-align: left;
 	font-family: times, serif;
@@ -35,6 +46,7 @@ nav {
     position: absolute;
 	right: 1rem;
     top : 1rem;
+
 }
 
 #menu::before {

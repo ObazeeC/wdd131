@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body{
+* {
+margin:0;
+padding:0;
 box-sizing: border-box;
 }
 .logo img{
     border: 2px solid rgba(0,0,1,.2);
 }
 
-header{
-    background-color: tomato;
-}
+
 .hero img{
     width: 100%;
     height:auto;
@@ -23,6 +23,59 @@ header{
     margin-top:1rem;
 }
 
+header{
+    background-color: tomato;
+}
+.logo {
+    width:100px;
+    height:auto;
+    border:2px solid rgba(105, 105, 138, 0.2);
+    margin-left:.3rem ;
+    margin-top:.3rem ;
+}
+#menu {
+    font-size: 1.5rem;
+    border:0;
+    background-color: none;
+    position:absolute;
+    right:.5rem;
+    top:.5rem;
+    color:#000
+}
+
+#menu::before {
+	content: "☰";
+    font-weight: bold;
+}
+
+#menu.open::before {
+	content: "X";
+    color:red;
+    font-weight: bold;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    color:white;
+}
+
+.navigation a {
+    display: none;
+    padding:1rem;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+.navigation a:hover{
+    background-color: #e9d9ae;
+    color:#907392;
+    font-weight:700;
+}
+.open a {
+    display: block;
+}
+
 .section1{
     border:2px solid green;
     max-width: 500px;
@@ -31,9 +84,12 @@ header{
     margin: 0 auto;
     margin-top:2rem;
 }
+.psection1{
+    background-color: rgb(161, 202, 188);
+}
 .section1 img{
    width:200px;
-   height: auto;
+   height:auto;
 
 }
 
@@ -47,8 +103,10 @@ header{
 }
 
 #section2 img{
-   width: 300px;
-   height: 400px
+   width: 420px;
+   height: auto;
+   border:1px solid rgba(119, 119, 253, 0.9);
+   border-radius:.5rem;
 }
 
 .section3{
@@ -61,5 +119,58 @@ justify-items: center;
 }
 
 .section3 iframe{
-    width: 300px;
+    width: 420px;
+    height:250px;
 }
+.psection3 h2 {
+    text-align: center;
+    border-bottom: 2px solid #9e2525;
+    border-radius: .5rem;
+    width:60%;
+    margin-bottom:.3rem;
+    background-color: #e9d9ee;
+}
+.info{
+padding-left:1rem;
+
+}
+
+.info p{
+   background-color: #e9d9ee;
+   padding:.5rem; 
+   border-radius: .5rem ;
+}
+
+.info h2{
+    text-align: center;
+    border-bottom: 2px solid #9e2525;
+    border-radius: .5rem;
+    width:60%;
+    margin:0 auto;
+    margin-top:1rem;
+    background-color: #e9d9ee;
+ }
+
+ footer{
+    background-color: #e9d9ae;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
