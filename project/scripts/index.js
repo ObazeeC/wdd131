@@ -19,19 +19,24 @@ const sec = document.querySelector('#section2')
 const images = [
 
 {
-    imageUrl: "./images/bride2.png",
-    alt:"Bride",
+    imageUrl: "./images/one-of3a.webp",
+    alt:"white wedding bride",
     
 },
 
 {
-    imageUrl: "./images/bride2.png",
-    alt:"1232",
+    imageUrl: "./images/oneof3b.webp",
+    alt:"white wedding smilling bride",
 
 },
 {
-    imageUrl: "./images/bride.png",
-    alt:"1232",
+    imageUrl: "./images/oneoof3c.webp",
+    alt:"Traditional glam",
+
+},
+{
+    imageUrl: "./images/trad (3).JPG",
+    alt:"Traditional glam",
 
 },
 ];
@@ -44,3 +49,17 @@ images.forEach(image=> {
     eachimg.setAttribute("width", "300") 
     sec.appendChild(eachimg)
 })
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+
+/*
+const date = new Date()
+let year = date.getFullYear();
+document.querySelector("#currentyear");
+*/
+
+
+let modify = document.lastModified;
+document.getElementById("lastModified").innerHTML = modify;
