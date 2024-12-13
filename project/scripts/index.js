@@ -21,7 +21,7 @@ const sec = document.querySelector('#section2')
 const images = [
 
 {
-    imageUrl: "./images/one-of3a.webp",
+    imageUrl: "./images/edo-bride.webp",
     alt:"white wedding bride",
     
 },
