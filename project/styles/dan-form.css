@@ -8,12 +8,13 @@ h1{
     margin:.5rem;
     background-color:#351d26;
 }
-/*----------- BODY --------------*/
+/*----------- BODY --------------
 body {
     font-size: 16px;
     font-family: 'Arimo', 'sans-serif';
     
 }
+    */
 .dan-form {
     padding:.2rem;
     max-width: 78%;
@@ -127,6 +128,4 @@ appearance:none /* This overrite the default browser styling*/
    
 }
 
-.newsletter label{
-  
-}
+

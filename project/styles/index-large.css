@@ -1,10 +1,10 @@
-@media screen and (min-width:500px){
+@media screen and (min-width:700px){
     #menu {
         display:none;
     }
 
     header{
-        background-color: brown;
+  
         display:grid;
         grid-template-columns: 200px 1fr;
         align-content: center;
@@ -14,24 +14,24 @@
     .navigation{
         display: flex;
         flex-direction: row;
-        height: 40px;
         align-self: center;
-        justify-items: flex-end;
-        background-color: none;
+        justify-content: flex-end;
+        background-color: inherit;
     }
-    
+
     .navigation a{
-        display: inline-block;
-        align-self: center;
-        justify-self: end;
-       
-       
+        display: flex;
+        color:#f3f3f3;
+        font-weight: bold;
     }
-    .logo{
-        display: block;
-        width: 120px;
-        height: auto;
+
+    .navigation a:hover{
+        color:black;
     }
+
+    
+
+   
 
     .hero-section1{
         max-width:400px ;
