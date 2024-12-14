@@ -2,16 +2,8 @@
 
 
 @media screen and (min-width:500px){
-    body{
-        box-sizing: border-box;
-        background-color: #f3f3f3;
-        color:black;
-        
-    }
-    header{
-        font-family: "Roboto", sans-serif; 
-         
-    }
+   
+    
     .hero-section1 h2,.hero-section2 h2{
         text-align: center;
         border-bottom: 1px solid#ad94b4;
@@ -32,9 +24,7 @@
     
     }
    
-    p{
-        font-family: "Arimo", sans-serif;
-    }
+    
     .logo img {
         display:none;
     }

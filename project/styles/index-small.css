@@ -121,12 +121,18 @@ header{
 }
 .prom{
     color:red;
+    
 }
 .psection1{
     background-color: #e9d9ee;
     padding-left: .5rem;
 
-   
+}
+
+.psection1 p{
+  
+    padding: .5rem;
+
 }
 
 .sec1{
@@ -137,6 +143,7 @@ header{
 .sec1a{
     width:98%;
     height:auto;
+    padding:.5rem;
  }
  
 
@@ -172,6 +179,7 @@ margin-top: 5rem;
 
 .section3 img{
     width: 300px;
+    margin:.5rem;
 }
 
 .section3 iframe{
@@ -238,7 +246,7 @@ margin-top: 1rem;
 
 .flogo img{
     display: inline-block;
-    width: 20px;
+    width: 40px;
     height:auto;
     margin: .3rem;
 }
