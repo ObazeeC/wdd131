@@ -46,6 +46,7 @@ p{
 header{
     background-color: #5c415d;
     color:#f3f3f3;
+    margin-bottom:.3rem;
 }
 .logo {
     width:100px;
@@ -123,6 +124,9 @@ header{
     color:red;
     
 }
+.psection1 h2 {
+    margin-top: .5rem;
+}
 .psection1{
     background-color: #e9d9ee;
     padding-left: .5rem;
@@ -137,7 +141,8 @@ header{
 
 .sec1{
    width:200px;
-   max-height:160px;
+   /*max-height:160px; for small scree*/
+
 }
 
 .sec1a{
@@ -146,7 +151,9 @@ header{
     padding:.5rem;
  }
  
-
+.sub1{
+    padding:.2rem
+}
 .sale{
     display: block;
     width:100px;
@@ -255,8 +262,6 @@ margin-top: 1rem;
     width:22px
    
 }
-
-
 
 
 

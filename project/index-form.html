@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan-Maria Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundatamentals - Esosa C. Obazee - Form-Dan-Maria">
+    <meta name="author" content="Esosa C. Obazee">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/dan-form.css">
+ <!-- <link rel="stylesheet" href="../week05_form-start/Form-start/css/small.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+    <header>
+      
+        <button id="menu"></button>
+        <img class="logo" src="images/dan-maria-200.webp"  alt="logo dan Maria" loading="lazy">
+
+   <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Book Us</a>
+   </nav> 
+    </header>
+
+    <main>
+        <h1>Book Your Place</h1>
+
+      <form class="dan-form" method="get" action="index-confirmation.html" >
+         <fieldset>
+            <legend> Contact Information</legend>
+          <label> Firstname* <input type="text" name="fname" required> </label> 
+          <label> Lastname* <input type="text" name="lname" required> </label> 
+          <label> Phone* <input type="tel" name="fname" required> </label> 
+          <label> Email <input type="email" name="email" > </label> 
+          
+         </fieldset>
+
+         <fieldset>
+            <legend> Event Information</legend>
+            <label>Location* <input type="text" name="address" required placeholder="Enter Location of job">  </label> 
+            <label> Date* <input type="date" name="date" required placeholder="Enter Location of job">  </label> 
+            <label> Time* <input type="time" name="time" required placeholder="Enter Location of job">  </label> 
+            
+            <label> Event* <select name="jobs" required>
+             <option value="">Please select event &#9662;
+                <option value="white wedding">White Wedding Event</option>
+                <option value="african tradition">African Traditional wedding</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="naming ceremony">Child naming ceremony</option>
+                <option value="convocation">Convocation</option>
+                <option value="glam">Normal simple Glam</option>
+             </option>
+            </select>  </label> 
+            <label> Number of person* <input type="number" name="name" required >  </label> 
+         </fieldset>
+
+         <input type="submit" value="Request Booking">
+      </form>
+    </main>
+
+
+
+
+    <footer>
+         
+        <div class="ftext"> 
+            <p> ©️<span id="currentyear"> </span> | Esosa C. Obazee | Nigeria</p>
+            <p> Last Modified <span id="lastModified"></span></p>
+        </div>
+    
+        <div class="flogo"> 
+            <a href="https://www.instagram.com/makeupbydanmaria/"> <img src="images/insta-100.webp" alt="logo-istagram"> </a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FFNQPI5IAJHYFP1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZg1y0FQDQy-8gRGhfj_HGsePYhQqhcXF6I6Iah_iqEOlFRANTIMkNhZEs_aem__1-KFanBBPsFNl0UTvD28g&e=AT0TEKhq3O59liNf3VRMULepjFktb02j37VG8ZrA7-ZX_kgP6IbLAZHwGrzRKl2xTSko4KCz6fiS7WA_3rgar9ge6ogimApBO-uZTw"> <img src="images/whatsap-200.webp" alt="logo-whatsApp"> </a>
+         </div>
+    </footer>
+    
+</body>
+</html>

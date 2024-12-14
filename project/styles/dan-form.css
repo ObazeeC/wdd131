@@ -1,0 +1,132 @@
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1{
+    margin:.5rem;
+    background-color:#351d26;
+}
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Arimo', 'sans-serif';
+    
+}
+.dan-form {
+    padding:.2rem;
+    max-width: 78%;
+    margin: 0 auto;
+    background-color: #c4acc5;
+    margin-top:.5rem;
+}
+
+/* FORM STYLING*/
+.dan-form fieldset{
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding:.5rem 2%;
+}
+
+.dan-form legend {
+   color:blue;
+   padding: 0 .5rem;
+}
+
+.dan-form label{
+    display: block;
+    padding-top:1rem;
+    color:black;
+    font-size: .9rem;
+ }
+/*
+.wf1 div {
+    padding-top:1rem;
+    color:blue;
+    font-size: .9rem;
+}
+*/
+.dan-form input[type="text"],
+.dan-form input[type="tel"],
+.dan-form input[type="email"],
+.dan-form input[type="url"],
+.dan-form input[type="date"],
+.dan-form input[type="time"],
+.dan-form select,
+.dan-form input[type="number"]{
+background-color: #eee;
+display: block; /* to have the label on top of the input*/
+border:solid 1px grey;
+border-radius: 5px;
+padding:.75rem;
+color:#555;
+width:100%; /* this work great for phone too much on a large screen.
+set max-width */
+max-width: 400px;
+appearance:none /* This overrite the default browser styling*/
+/* Notice that the drop down arrow have disappared
+   Now, add your own drop arrow in the html file*/
+}
+
+.dan-form input[type="submit"]{
+    border:none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color:#fff;
+    border-radius: 5px;
+    padding:.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2%  2rem 2%; /* 2% and left and 2% on the right, plus 96% add up a total of 100% */
+    box-shadow:1px 1px 4px #999;
+}
+
+.dan-form input[type="submit"]:hover{
+   cursor:pointer;
+    background-image: linear-gradient(#774236, #330d04);
+   
+}
+
+.dan-form input:required{
+   border-bottom: 3px solid red;
+   /*  You can use border left, right or bottom */
+}
+
+.dan-form input:required:valid{
+    border-bottom: 3px solid rgb(13, 128, 3);
+ }
+
+ .newsletter input {
+    display: block;
+    background-color: #eee;
+    border:solid 1px grey;
+    border-radius: 5px;
+     padding:.75rem;
+     color:#555;
+     width:100%;
+     max-width: 400px;
+
+ }
+
+ .newsletter input[type="submit"]{
+    border:none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color:#fff;
+    border-radius: 5px;
+    padding:.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2%  2rem 2%; /* 2% and left and 2% on the right, plus 96% add up a total of 100% */
+    box-shadow:1px 1px 4px #999;
+}
+
+.newsletter input[type="submit"]:hover{
+   cursor:pointer;
+    background-image: linear-gradient(#774236, #330d04);
+   
+}
+
+.newsletter label{
+  
+}

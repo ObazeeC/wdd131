@@ -69,6 +69,13 @@ main {
    font-size: .9rem;
 }
 
+.dan-form label{
+    display: block;
+    padding-top:1rem;
+    color:red;
+    font-size: .9rem;
+ }
+
 .wf1 div {
     padding-top:1rem;
     color:blue;
