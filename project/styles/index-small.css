@@ -292,3 +292,20 @@ caption{
     font-weight: bold;
     border-bottom: 2px solid rgba(250, 21, 5, 0.2);
 }
+
+
+/* Subscribtion confirmation page*/
+.subconfirm{
+    border: 2px solid #e6d2e7;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding:.5rem;
+    background-color: #f9ebeb;
+}
+
+.subconfirm p{
+   padding-top:.5rem;
+}
