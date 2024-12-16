@@ -8,6 +8,7 @@
     <meta name="author" content="Esosa C. Obazee">
     <link rel="stylesheet" href="styles/index-small.css">
     <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/dan-form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -22,14 +23,65 @@
     <a href="https://obazeec.github.io/wdd131/project/index.html" target="_blank">Home</a>
     <a href="https://obazeec.github.io/wdd131/project/about-us.html" target="_blank">About</a>
     <a href="https://obazeec.github.io/wdd131/project/products.html" target="_blank">Products</a>
-    <a href="https://obazeec.github.io/wdd131/project/booking.html" target="_blank">Bookings</a>
+    <a href="https://obazeec.github.io/wdd131/project/index-form.html" target="_blank">Bookings</a>
    </nav>  
     </header>
 
 
     <main>
         <h1>Booking</h1>
-        <p> THIS PAGE IS CURRENTLY UNDER CONSTRUCTION </p>
+        <div class="hero">
+            
+            <picture>
+               <source media="(min-width:900px)" srcset="images/herosecondpage-1500.webp">
+               <source media="(min-width:650px)" srcset="images/hero-blue-1000.webp">
+               <img src="images/bride.JPEG"   alt="test" width="330" height="200">
+            </picture>
+            <section class="hero-section1">
+                <h2 >Dan-Maria</h2>
+                <p>Reliable make up artist since<i>2021</i>, covers Edinburgh areas, Glasgow, Falkirk and Grangemouthsequuntur magni quia non nemo repellendus dolor quaerat nisi consequatur et, quis necessitatibus sunt maxime inventore, fugit suscipit iusto culpa tempora expedita delectus asperiores odit eum.</p>
+            </section>
+           <section class="hero-section2 hero-section2b">
+            <h2>What we do</h2>
+            <p>We prepare you for your wedding, making glow your glorious. 
+                Also, we prepare for <b> all kinds of events</b>, birthday ceremonies, child dedication, convocation,
+                first-date dinner, and more... lorem beatae, cto veritatis, atque soluta, maiores nihil quod qui rem est debitis?</p>
+           </section>
+        </div>
+        <p > <b> <i> THIS PAGE IS CURRENTLY UNDER CONSTRUCTION </i></b> </p>
+        
+        <form class="dan-form" method="get" action="index-confirmation.html" >
+            <fieldset>
+               <legend> Contact Information</legend>
+             <label> Firstname* <input type="text" name="fname" required> </label> 
+             <label> Lastname* <input type="text" name="lname" required> </label> 
+             <label> Phone* <input type="tel" name="fname" required> </label> 
+             <label> Email <input type="email" name="email" > </label> 
+             
+            </fieldset>
+   
+            <fieldset>
+               <legend> Event Information</legend>
+               <label>Location* <input type="text" name="address" required placeholder="Enter Location of job">  </label> 
+               <label> Date* <input type="date" name="date" required placeholder="Enter Location of job">  </label> 
+               <label> Time* <input type="time" name="time" required placeholder="Enter Location of job">  </label> 
+               
+               <label> Event* <select name="jobs" required>
+                <option value="">Please select event &#9662;
+                   <option value="white wedding">White Wedding Event</option>
+                   <option value="african tradition">African Traditional wedding</option>
+                   <option value="birthday">Birthday Party</option>
+                   <option value="naming ceremony">Child naming ceremony</option>
+                   <option value="convocation">Convocation</option>
+                   <option value="glam">Normal simple Glam</option>
+                </option>
+               </select>  </label> 
+               <label> Number of person* <input type="number" name="name" required >  </label> 
+            </fieldset>
+   
+            <input type="submit" value="Request Booking">
+         </form>
+
     </main>
 
 
