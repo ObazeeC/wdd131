@@ -22,6 +22,7 @@ const images = [
 
 {
     imageUrl: "./images/edo-bride.webp",
+    
     alt:"white wedding bride",
     
 },
@@ -65,3 +66,194 @@ document.querySelector("#currentyear");
 
 let modify = document.lastModified;
 document.getElementById("lastModified").innerHTML = modify;
+
+// Picture album
+
+const events = [
+{
+    event:"tranditionl",
+    url: "./images/traditional1.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+
+{
+    event:"tranditionl",
+    URL: "./images/traditional2.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"tranditionl",
+    URL: "./images/traditional3.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"tranditionl",
+    URL: "./images/traditional4.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"tranditionl",
+    URL: "./images/traditional5.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"tranditionl",
+    URL: "./images/traditional6.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"tranditionl",
+    URL: "./images/traditional7.webp",
+    alt: "Traditional wedding picture",
+
+
+},
+{
+    event:"white1",
+    URL: "./images/white1.webp",
+    alt: "White wedding picture",
+
+
+},
+{
+    event:"white2",
+    URL: "./images/white2.webp",
+    alt: "white wedding picture",
+
+
+},
+{
+    event:"white3",
+    URL: "./images/white3.webp",
+    alt: "White wedding picture",
+
+
+},
+{
+    event:"white4",
+    URL: "./images/white4.webp",
+    alt: "White wedding picture",
+
+
+},
+{
+    event:"white",
+    URL: "./images/white5.webp",
+    alt: "white wedding picture",
+
+
+},
+
+{
+    event:"glam",
+    URL: "./images/glam1.webp",
+    alt: "glam picture",
+
+},
+{
+    event:"glam",
+    URL: "./images/glam2.webp",
+    alt: "glam picture",
+
+
+},
+{
+    event:"glam",
+    URL: "./images/glam3.webp",
+    alt: "glam picture",
+
+
+},
+{
+    event:"glam",
+    URL: "./images/glam4.webp",
+    alt: "glam picture",
+
+
+},
+{
+    event:"glam",
+    URL: "./images/glam5.webp",
+    alt: "glam picture",
+
+
+},
+
+{
+    event:"glam",
+    URL: "./images/glam6.webp",
+    alt: "glam picture",
+
+
+},
+
+{
+    event:"nails",
+    URL: "./images/nails1.webp",
+    alt: "nails picture",
+
+
+},
+
+{
+    event:"nails",
+    URL: "./images/nails2.webp",
+    alt: "nails picture",
+
+
+},
+{
+    event:"nails",
+    URL: "./images/nails3.webp",
+    alt: "nails picture",
+
+
+},
+{
+    event:"nails",
+    URL: "./images/nails4.webp",
+    alt: "nails picture",
+
+
+},
+{
+    event:"nails",
+    URL: "./images/nails5.webp",
+    alt: "nails picture",
+
+
+},
+{
+    event:"nails",
+    URL: "./images/nails6.webp",
+    alt: "nails picture",
+
+
+},
+
+
+];
+
+const trad = document.querySelector('#section3');
+
+
+events.forEach(y=> {
+    const eachimg = document.createElement('img');
+    eachimg.src = y.url;
+    eachimg.alt = image.alt;
+    eachimg.setAttribute("loading", "lazy");
+    eachimg.setAttribute("width", "300") 
+    trad.appendChild(eachimg)
+})
