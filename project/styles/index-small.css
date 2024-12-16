@@ -261,16 +261,34 @@ margin-top: 1rem;
    
 }
 
+/** TABLE*/
+.dan-table{
+   
+    border:2px solid rgba(49, 38, 38, 0.1);
+    letter-spacing:1px;
+    border-collapse: collapse;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
 
+th,td{
+    border: 3px solid rgba(211, 235, 206, .5);
+    text-align: center;
+}
+th{
+   background-color: tomato; 
+}
+tbody > tr:nth-of-type(even){
+    background-color: rgba(211, 235, 206, .5);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+caption{
+    caption-side: bottom;
+    margin:.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(250, 21, 5, 0.2);
+}
