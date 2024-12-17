@@ -71,50 +71,50 @@ document.getElementById("lastModified").innerHTML = modify;
 
 const events = [
 {
-    event:"tranditionl",
-    url: "./images/traditional1.webp",
+    event:"tranditional",
+    URL: "./images/traditional1.webp",
     alt: "Traditional wedding picture",
 
 
 },
 
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional2.webp",
     alt: "Traditional wedding picture",
 
 
 },
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional3.webp",
     alt: "Traditional wedding picture",
 
 
 },
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional4.webp",
     alt: "Traditional wedding picture",
 
 
 },
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional5.webp",
     alt: "Traditional wedding picture",
 
 
 },
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional6.webp",
     alt: "Traditional wedding picture",
 
 
 },
 {
-    event:"tranditionl",
+    event:"tranditional",
     URL: "./images/traditional7.webp",
     alt: "Traditional wedding picture",
 
@@ -241,8 +241,7 @@ const events = [
     alt: "nails picture",
 
 
-},
-
+}
 
 ];
 
@@ -251,9 +250,10 @@ const trad = document.querySelector('#section3');
 
 events.forEach(y=> {
     const eachimg = document.createElement('img');
-    eachimg.src = y.url;
-    eachimg.alt = image.alt;
+    eachimg.src = y.URL;
+    eachimg.alt = y.alt;
     eachimg.setAttribute("loading", "lazy");
     eachimg.setAttribute("width", "300") 
     trad.appendChild(eachimg)
 })
+

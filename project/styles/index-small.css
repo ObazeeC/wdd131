@@ -152,6 +152,7 @@ header{
 .sub1{
     padding:.2rem
 }
+
 .sale{
     display: block;
     width:100px;
@@ -308,4 +309,8 @@ caption{
 
 .subconfirm p{
    padding-top:.5rem;
+}
+.under{
+    color:red;
+    text-transform: uppercase;
 }
