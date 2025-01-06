@@ -245,12 +245,38 @@ const events = [
 
 ];
 
-const trad = document.querySelector('#section3');
+const evem = [
+
+    {
+      imgurl : "./images/dan-maria-200.webp",
+      alt:"traditional marriage"
+    },
+    
+    {
+        imgurl :  "./images/dan-maria-200.webp",
+      alt:"traditional marriage"
+    },
+
+    {
+        imgurl :  "./images/dan-maria-200.webp",
+      alt:"traditional marriage"
+    },
+
+    {
+        imgurl :  "./images/dan-maria-200.webp",
+      alt:"traditional marriage"
+    
+    },
+    ];
+    
 
 
-events.forEach(y=> {
+const trad = document.querySelector('#sect2');
+
+
+evem.forEach(y=> {
     const eachimg = document.createElement('img');
-    eachimg.src = y.URL;
+    eachimg.src = y.imgurl;
     eachimg.alt = y.alt;
     eachimg.setAttribute("loading", "lazy");
     eachimg.setAttribute("width", "300") 

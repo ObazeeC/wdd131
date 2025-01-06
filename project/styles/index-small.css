@@ -255,6 +255,7 @@ margin-top: 1rem;
     width: 40px;
     height:auto;
     margin: .3rem;
+    border-radius: 1rem;
 }
 .flogo img:hover{
     border: 2px solid #f3f3f3;
